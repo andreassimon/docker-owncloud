@@ -4,7 +4,7 @@ owncloud:
   ports:
     - "127.0.0.1:8001:80"
   volumes:
-    - /var/docker_volumes/data:/var/www/html/data
+    - /var/docker_volumes/owncloud-data:/var/www/html/data
   links:
     - mysql
 
