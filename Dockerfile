@@ -15,7 +15,7 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr/include/ --with-freetype-dir
   && docker-php-ext-install gd
 
 # owncloud
-ENV OWNCLOUD_VERSION=8.0.5
+ENV OWNCLOUD_VERSION=8.0.6
 RUN mkdir -p /var/www/html && \
   curl -L --insecure https://download.owncloud.org/community/owncloud-$OWNCLOUD_VERSION.tar.bz2 \
   | tar -xj -C /var/www/html --strip-components 1
